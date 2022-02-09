@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Tahoma', 'Arial', sans-serif;
+    font-size: 14px;
+    color:black;
+}
+* {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+body > div{
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: solid 1px rgb(165, 165, 165);
+}
+body > div > div:first-child,
+body > div > div:last-child{
+    position: relative;
+}
+body > div:first-child > div:first-child{
+    width: 100%;
+}
+body > div:first-child > div:last-child{
+    width: 50%;
+}
+body > div > div:first-child{
+    width: 25%;
+    padding-right: 10px;
+    text-align: right;
+}
+body > div > div:last-child{
+    padding-left: 20px;
+    width: 75%;
+}
+body > div:last-child{
+    border-bottom: none;
+}
+.resume__skills-title_wrapper,
+.resume__portfolio-title_wrapper,
+.resume__english-skills-title_wrapper,
+.resume__personal-traits-title_wrapper,
+.resume__education-title_wrapper,
+.resume__work-experience-title_wrapper,
+.resume__hobby-title_wrapper{
+    display: inline-block;
+}
+p{
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+h2{
+    margin: 0;
+    padding-top: 8px;
+    text-transform: uppercase;
+}
+.resume__avatar_wrapper{
+    display: inline-block;
+    text-align: center;
+}
+.resume__avatar{
+    height: 100%;
+}
+.resume__personal-data_FIO{
+    display: block;
+    padding-bottom: 25px;
+}
+.resume__personal-data_FIO_name,
+.resume__personal-data_FIO_surname{
+    display: inline-block;
+    font-size: 72px;
+    font-weight: bold;
+}
+.resume__personal-data_FIO_name{
+    margin-bottom: 0px;
+    line-height: 0.8;
+}
+.resume__personal-data_FIO_surname{
+    text-transform: uppercase;
+    line-height: 1;
+}
+address{
+    padding-top: 25px;
+    font-size: 0;
+}
+address > div{
+    font-size: 24px;
+    font-style: normal;
+}
+address > div:last-child{
+    margin-top: 15px;
+}
+.resume__portfolio > div:last-child{
+    margin-top: 25px;
+    padding-top: 25px;
+    font-size: 0;
+    border-top: solid 1px #A4A5A6;
+}
+.resume__portfolio a{
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+a[href$="lovalik"],
+a[href$="myAppJavaScript"],
+a[href$="myAppReact"]{
+    margin-bottom: 20px;
+}
+.resume__personal-traits{
+    display: none;
+}
+.resume__work-experience > div,
+.resume__education > div,
+.resume__hobby > div{
+    margin-bottom: 25px;
+    font-size: 0;
+}
+.resume__work-experience > div > div,
+.resume__education > div > div,
+.resume__hobby > div > div{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+.resume__work-experience > div > div:first-child,
+.resume__education > div > div:first-child,
+.resume__hobby > div > div:first-child{
+    width: 40%;
+}
+
+.resume__work-experience > div > div:last-child,
+.resume__education > div > div:last-child,
+.resume__hobby > div > div:last-child{
+    width: 60%;
+    padding-left: 15px;
+}
+.resume__work-experience_workplace_period,
+.resume__work-experience_workplace_city,
+.resume__education_period,
+.resume__education_city{
+    font-size: 10px;
+    position: relative;
+}
+.resume__work-experience_workplace_period,
+.resume__education_period{
+    margin-top: 14px;
+}
+.resume__work-experience_workplace_organization,
+.resume__education_organization,
+.resume__hobby-period{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.resume__work-experience_workplace_organization_prefix{
+    margin: 5px 0 0 0;
+}
+.resume__personal-traits-article p{
+    display: inline-block;
+    text-indent: 45px;
+}
+.resume__hobby > div:first-child{
+    margin-bottom: 25px;
+}

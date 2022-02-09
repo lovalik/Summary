@@ -1,27 +1,26 @@
 /* BACKGROUND-COLOR */
 @media screen and ( min-width: 1250px){
-    section:nth-child(odd) > div:first-child{
+    body > div:nth-child(odd) > div:first-child{
         background-color: #2B2C2C;
     }
-    section:nth-child(even) > div:first-child{
+    body > div:nth-child(even) > div:first-child{
         background-color: #292A2A;
     }
-    section:nth-child(odd) > div:last-child{
+    body > div:nth-child(odd) > div:last-child{
         background-color: #2D2E2E;
     }
-    section:nth-child(even) > div:last-child{
+    body > div:nth-child(even) > div:last-child{
         background-color: #2B2C2C;
     }
 }
 @media screen and ( max-width: 1250px){
-    section > div:first-child{
+    body > div > div:first-child{
         background-color: #292A2A;
     }
-    section > div:last-child{
+    body > div > div:last-child{
         background-color: #2D2E2E;
     }
 }
-
 /* REFERENCES TO GITHUB */
 @media screen and ( min-width: 750px){
     .resume__portfolio_references{
@@ -52,54 +51,48 @@
         width: 230px;
     }
 }
-
 /* ALL PADDINGS */
 @media screen and ( min-width: 1250px){
-    section > div:first-child{
+    body > div > div:first-child{
         padding: 75px 75px 0 0;
     }
-    section:first-child > div:first-child{
+    body > div:first-child > div:first-child{
         padding: 30px 75px 30px 0;
     }
 }
 @media screen and ( min-width: 1200px) and ( max-width: 1400px){
-    section:first-child > div:first-child{
+    body > div:first-child > div:first-child{
         padding-right: 25px;
     }
 }
 @media screen and ( min-width: 900px) and ( max-width: 1250px){
-    section > div:first-child{
-        padding: 75px 0 75px 75px;
-    }
-}
-@media screen and ( min-width: 900px){
-    section > div:last-child{
+    body > div > div:first-child{
         padding: 75px;
     }
 }
-@media screen and ( min-width: 600px) and ( max-width: 1250px){
-    .resume__education-title_wrapper{
-        padding-left: 45px;
+@media screen and ( min-width: 900px){
+    body > div > div:last-child{
+        padding: 75px;
     }
 }
 @media screen and ( min-width: 500px) and ( max-width: 900px){
-    section > div:last-child{
+    body > div > div:last-child{
         padding: 40px 25px;
     }
-    section > div:first-child{
+    body > div > div:first-child{
         padding: 40px 25px;
     }
 }
 @media screen and ( max-width: 500px){
-    section > div:last-child{
+    body > div > div:last-child{
         padding: 20px 25px;
     }
-    section > div:first-child{
+    body > div > div:first-child{
         padding: 20px 25px;
     }
 }
 @media screen and ( max-width: 410px){
-    section:first-child > div:first-child{
+    body > div:first-child > div:first-child{
         padding: 40px 5px;
     }
 }
@@ -108,7 +101,6 @@
         padding: 10px;
     }
 }
-
 /* AVATARA */
 @media screen and ( min-width: 350px){
     .resume__avatar_wrapper{
@@ -130,7 +122,6 @@
         border-radius: 100px;
     }
 }
-
 /* TABLE AND UL */
 @media screen and ( min-width: 800px){
     .resume__personal-traits_right-part > ul{
@@ -138,7 +129,6 @@
     }
     table{
         width: 750px;
-        margin: 0 auto;
     }
 }
 @media screen and ( max-width: 800px){
@@ -151,48 +141,37 @@
         font-size: 16px;
     }
 }
-
 /* TEXT-ALIGN ___ FLEX-WRAP ____ FLEX-DIRECTION */
 @media screen and ( min-width: 1250px){
-    section > div:first-child{
+    body > div > div:first-child{
         text-align: right;
     }
 }
-@media screen and ( min-width: 600px) and ( max-width: 1250px){
-    section > div:first-child{
-        text-align: left;
-    }
-    section:first-child > div:first-child{
+@media screen and ( max-width: 1250px){
+    body > div > div:first-child{
         text-align: center;
     }
-}
-@media screen and ( max-width: 600px){
-    section > div:first-child{
+    body > div:first-child > div:first-child,
+    body > div:first-child > div:last-child{
         text-align: center;
     }
-    section:first-child > div:last-child{
+    address > div{
         text-align: center;
-    }
-}
-@media screen and ( max-width: 500px){
-    address{
-        flex-direction: column;
     }
 }
 @media screen and ( max-width: 1250px){
-    section{
+    body > div{
         flex-wrap: wrap;
     }
 }
-
 /* FONT-SIZE */
 @media screen and ( min-width: 800px){
-    section > div:last-child{
+    body > div > div:last-child{
         font-size: 18px;
     }
 }
 @media screen and ( max-width: 800px){
-    section > div:last-child{
+    body > div > div:last-child{
         font-size: 16px;
     }
 }
@@ -263,55 +242,57 @@
     }
 }
 @media screen and ( min-width: 750px){
+    h2,
     .resume__portfolio_references a{
         font-size: 24px;
     }
 }
 @media screen and ( max-width: 750px){
+    h2,
     .resume__portfolio_references a{
         font-size: 20px;
     }
 }
-
 /* WIDTH FOR DIVS */
 @media screen and ( max-width: 330px){
-    section{
+    body > div{
         min-width: 330px;
     }
 }
 @media screen and ( min-width: 1800px){
-    section > div:first-child{
+    body > div > div:first-child, 
+    body > div > div:last-child{
         width: 50%;
     }
-    section > div:last-child{
-        width: 1000px;
+    address,
+    body > div> div:last-child > div{
+        width: 750px; 
     }
 }
 @media screen and ( min-width: 1400px) and ( max-width: 1800px){
-    section > div:first-child{
+    body > div > div:first-child{
         width: 35%;
     }
-    section > div:last-child{
+    body > div > div:last-child{
         width: 65%;
     }
 }
 @media screen and ( min-width: 1250px) and ( max-width: 1400px){
-    section > div:first-child{
+    body > div > div:first-child{
         width: 30%;
     }
-    section > div:last-child{
+    body > div > div:last-child{
         width: 70%;
     }
 }
 @media screen and ( max-width: 1250px){
-    section > div:first-child{
+    body > div > div:first-child{
         width: 100%;
     }
-    section > div:last-child{
+    body > div > div:last-child{
         width: 100%;
     }
 }
-
 @media screen and ( min-width: 800px){
     .resume__work-experience > div > div:first-child,
     .resume__education > div > div:first-child,
@@ -334,57 +315,6 @@
     .resume__education > div > div:last-child,
     .resume__hobby > div > div:last-child{
         width: 50%;
-    }
-}
-/* COONECT LINE BETWEN EDUCATION AND WORK EXPERIENCE */
-@media screen and ( min-width: 900px){
-    .resume__work-experience_right-part::before{
-        top: 90px;
-        height: 800px;
-    }
-    .resume__education_right-part::before{
-        bottom: 65px;
-        height: 900px;
-    }
-    .resume__education_right-part::after{
-        left: 70px;
-        bottom: 65px;
-    }
-}
-@media screen and ( min-width: 500px) and ( max-width: 900px){
-    .resume__work-experience_right-part::before,
-    .resume__education_right-part::before{
-        left: 25px;
-    }
-     .resume__education_right-part::after{
-        left: 20px;
-        bottom: 65px;
-    }
-    .resume__work-experience_right-part::before{
-        top: 65px;
-        height: 800px;
-    }
-    .resume__education_right-part::before{
-        bottom: 65px;
-        height: 800px;
-    }
-}
-@media screen and ( max-width: 500px){
-    .resume__work-experience_right-part::before,
-    .resume__education_right-part::before{
-        left: 25px;
-    }
-     .resume__education_right-part::after{
-        left: 20px;
-        bottom: 50px;
-    }
-    .resume__work-experience_right-part::before{
-        top: 40px;
-        height: 800px;
-    }
-    .resume__education_right-part::before{
-        bottom: 50px;
-        height: 900px;
     }
 }
 /* RUS - ENG FLAGS */

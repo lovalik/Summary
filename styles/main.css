@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('./font-face.css');
 @import url('./responsive.css');
 
 body {
@@ -6,7 +6,7 @@ body {
     padding: 0;
     width: 100%;
     background-color: #292A2A;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', 'Ubuntu-Bold', 'Tahoma', 'Arial', sans-serif;
     color: #979899;
     font-size: 0;
 }
@@ -22,15 +22,15 @@ a:hover{
     color: white;
     transform: scale(1.1, 1.1);
 }
-section{
+body > div{
     position: relative;
     display: flex;
     margin: 0;
     padding: 0;
     width: 100%;
 }
-section > div:first-child,
-section > div:last-child{
+body > div > div:first-child,
+body > div > div:last-child{
     position: relative;
 }
 .resume__skills-title_wrapper,
@@ -42,9 +42,6 @@ section > div:last-child{
 .resume__hobby-title_wrapper{
     display: inline-block;
 }
-article{
-    width: 100%;
-}
 p{
     margin-block-start: 10px;
     margin-block-end: 10px;
@@ -52,7 +49,6 @@ p{
 h2{
     margin: 0;
     padding-top: 8px;
-    font-size: 18px;
     text-transform: uppercase;
 }
 .resume__avatar_wrapper{
@@ -94,40 +90,37 @@ a[ href*="indexRUS.html" ]{
     transform: scale(1.2, 1.2);
 }
 .resume__personal-data_FIO{
+    display: block;
+    padding-bottom: 25px;
+    border-bottom: solid 1px #A4A5A6;
+}
+.resume__personal-data_FIO_name,
+.resume__personal-data_FIO_surname{
     display: inline-block;
+    font-size: 72px;
 }
 .resume__personal-data_FIO_name{
     margin-bottom: 0px;
     line-height: 0.8;
-    font-size: 56px;
-    font-weight: 300;
-    font-style: italic;
     color: #A4A5A6;
 }
 .resume__personal-data_FIO_surname{
-    margin-top: 0px;
-    line-height: 1;
-    font-size: 72px;
-    font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Ubuntu-Bold';
+    margin: 0 0 0 15px;
+    line-height: 1;
     color: #E0A809;
 }
 address{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 15px;
-    width: 100%;
+    padding-top: 25px;
     font-size: 0;
-    border-top: solid 1px #A4A5A6;
 }
 address > div{
-    font-size: 16px;
+    font-size: 24px;
     font-style: normal;
 }
-address > div > p:first-child{
-    text-transform: uppercase;
-    font-weight: bold;
+address > div:last-child{
+    margin-top: 15px;
 }
 .resume__portfolio > div:last-child{
     margin-top: 25px;
@@ -138,78 +131,22 @@ address > div > p:first-child{
 .resume__portfolio_references{
     display: flex;
 }
-.resume__github_avatar{
-    display: inline-block;
-    width: 40px;
-}
 .resume__portfolio a{
     display: block;
     font-weight: bold;
 }
-.resume__version-nativeJS_reference > p,
-.resume__github_reference > p,
-.resume__version-ReactJS_reference > p,
-.resume__live-host_reference > p{
-    display: block;
-    width: 100%;
-    font-size: 16px;
-}
-a[href$="myAppJavaScript"]{
-    margin-bottom: 5px;
-}
+a[href$="lovalik"],
+a[href$="myAppJavaScript"],
 a[href$="myAppReact"]{
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 .resume__personal-traits{
     border-collapse: collapse;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.resume__personal-traits tr{
-    text-align: center;
-    height: 40px;
-}
-.resume__personal-traits tr:nth-child(2){
-    vertical-align: center;
-    text-align: center;
-    height: 70px;
+    padding-top: 20px;
+    text-align: left;
 }
 .resume__personal-traits tr > td{
-    width: 33%;
-    vertical-align: middle;
-}
-.resume__personal-traits tr:nth-child(1) > td,
-.resume__personal-traits tr:nth-child(2) > td{
-    vertical-align: top;
-}
-.resume__personal-traits tr:nth-child(3) > td{
-    vertical-align: bottom;
-}
-.resume__work-experience_right-part::before,
-.resume__education_right-part::before{
-    display: block;
-    position: absolute;
-    content: "";
-    border-left: solid 1px #A4A5A6;
-}
-.resume__work-experience_workplace_period::before,
-.resume__education_period::before,
-.resume__education_right-part::after{
-    position: absolute;
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    background-color: #E0A809;
-}
-.resume__work-experience_workplace_period::before,
-.resume__education_period::before{
-    top: 0px;
-    left: -30px;
-}
-.resume__work-experience_workplace,
-.resume__education_institution{
-    padding-left: 25px;
+    padding-top: 5px;
 }
 .resume__work-experience > div,
 .resume__education > div,
@@ -255,4 +192,3 @@ a[href$="myAppReact"]{
 .resume__hobby > div:first-child{
     margin-bottom: 25px;
 }
-
