@@ -11,7 +11,7 @@ body {
 }
 a{
     text-decoration: none;
-    color: red;
+    color:black;
 }
 body > div{
     position: relative;
@@ -25,23 +25,28 @@ body > div > div:first-child,
 body > div > div:last-child{
     position: relative;
 }
-body > div:first-child > div:first-child{
-    width: 100%;
-}
-body > div:first-child > div:last-child{
-    width: 50%;
-}
 body > div > div:first-child{
     width: 25%;
     padding-right: 10px;
     text-align: right;
 }
+body > div:last-child{
+    border-bottom: none;
+}
 body > div > div:last-child{
     padding-left: 20px;
     width: 75%;
 }
-body > div:last-child{
-    border-bottom: none;
+body > div:first-child{
+    padding-bottom: 60px;
+}
+body > div:first-child > div{
+    width: 50%;
+}
+body > div:first-child > div:first-child{
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
 }
 .resume__skills-title_wrapper,
 .resume__portfolio-title_wrapper,
@@ -62,20 +67,26 @@ h2{
     text-transform: uppercase;
 }
 .resume__avatar_wrapper{
+    position: relative;
+    left: -60px;
+    width: 475px;
+    height: 475px;
     display: inline-block;
     text-align: center;
 }
 .resume__avatar{
     height: 100%;
+    filter: grayscale(100%);
 }
 .resume__personal-data_FIO{
     display: block;
+    margin-top: 50px;
     padding-bottom: 25px;
 }
 .resume__personal-data_FIO_name,
 .resume__personal-data_FIO_surname{
     display: inline-block;
-    font-size: 72px;
+    font-size: 64px;
     font-weight: bold;
 }
 .resume__personal-data_FIO_name{
@@ -103,15 +114,33 @@ address > div:last-child{
     font-size: 0;
     border-top: solid 1px #A4A5A6;
 }
-.resume__portfolio_references > div{
+.resume__github_reference,
+.resume__live-host_reference{
     display: inline-block;
     width: 50%;
+    text-align: center;
 }
-.resume__portfolio_references a{
+.resume__version-nativeJS_reference,
+.resume__version-ReactJS_reference{
+    display: none;
+}
+a[href*="github.com/lovalik"],
+a[href*="github.io/liveHosting"]{
     display: block;
-    margin-bottom: 10px;
     font-weight: bold;
     font-size: 18px;
+}
+.resume__qr-for-github,
+.resume__qr-for-live-hosting{
+    display:inline-block;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px; 
+}
+.resume__qr-for-github img,
+.resume__qr-for-live-hosting img{
+    width: 100%;
+    height: 100%; 
 }
 .resume__personal-traits{
     display: none;
@@ -137,7 +166,6 @@ ul{
 .resume__hobby > div > div:first-child{
     width: 40%;
 }
-
 .resume__work-experience > div > div:last-child,
 .resume__education > div > div:last-child,
 .resume__hobby > div > div:last-child{

@@ -13,6 +13,10 @@ body {
 * {
     box-sizing: border-box;
 }
+.resume__qr-for-github,
+.resume__qr-for-live-hosting{
+    display: none;
+}
 a{
     text-decoration: none;
     transition: 150ms linear;
@@ -133,12 +137,8 @@ address > div:last-child{
 }
 .resume__portfolio a{
     display: block;
-    font-weight: bold;
-}
-a[href$="lovalik"],
-a[href$="myAppJavaScript"],
-a[href$="myAppReact"]{
     margin-bottom: 20px;
+    font-weight: bold;
 }
 .resume__personal-traits{
     border-collapse: collapse;

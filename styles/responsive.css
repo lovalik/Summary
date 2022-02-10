@@ -21,37 +21,13 @@
         background-color: #2D2E2E;
     }
 }
-/* REFERENCES TO GITHUB */
-@media screen and ( min-width: 750px){
-    .resume__portfolio_references{
-        justify-content: space-between;
-    }
-}
-@media screen and ( min-width: 1250px) and ( max-width: 1550px){
-    .resume__portfolio_references{
-        flex-wrap: wrap;
-    }
-    .resume__portfolio_references > div{
-        width: 50%;
-    }
-}
-@media screen and ( min-width: 600px) and ( max-width: 1050px){
-    .resume__portfolio_references{
-        flex-wrap: wrap;
-    }
-    .resume__portfolio_references > div{
-        width: 50%;
-    }
-}
-@media screen and ( max-width: 600px){
-    .resume__portfolio_references{
-        flex-direction: column;
-    }
-    .resume__portfolio_references > div{
-        width: 230px;
-    }
-}
 /* ALL PADDINGS */
+@media screen and ( min-width: 600px){
+    a[href$="lovalik/myAppJavaScript"],
+    a[href$="lovalik/myAppReact"]{
+        padding-left: 60px;
+    }
+}
 @media screen and ( min-width: 1250px){
     body > div > div:first-child{
         padding: 75px 75px 0 0;
@@ -142,6 +118,16 @@
     }
 }
 /* TEXT-ALIGN ___ FLEX-WRAP ____ FLEX-DIRECTION */
+@media screen and ( min-width: 600px){
+    .resume__portfolio_references{
+        flex-wrap: wrap;
+    }
+}
+@media screen and ( max-width: 600px){
+    .resume__portfolio_references{
+        flex-direction: column;
+    }
+}
 @media screen and ( min-width: 1250px){
     body > div > div:first-child{
         text-align: right;
@@ -254,6 +240,16 @@
     }
 }
 /* WIDTH FOR DIVS */
+@media screen and ( min-width: 600px){
+    .resume__portfolio_references > div{
+        width: 50%;
+    }
+}
+@media screen and ( max-width: 600px){
+    .resume__portfolio_references > div{
+        width: 280px;
+    }
+}
 @media screen and ( max-width: 330px){
     body > div{
         min-width: 330px;
