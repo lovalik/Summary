@@ -13,6 +13,7 @@ body {
 * {
     box-sizing: border-box;
 }
+.resume__line-between-sections,
 .resume__qr-for-github,
 .resume__qr-for-live-hosting{
     display: none;

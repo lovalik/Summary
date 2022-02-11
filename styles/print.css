@@ -2,8 +2,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'Tahoma', 'Arial', sans-serif;
-    font-size: 14px;
+    font-family: 'Arial', 'Tahoma', sans-serif;
     color:black;
 }
 * {
@@ -17,13 +16,17 @@ body > div{
     position: relative;
     display: flex;
     margin: 0;
-    padding: 10px 0;
+    padding: 5px 0;
     width: 100%;
-    border-bottom: solid 1px rgb(165, 165, 165);
+    page-break-inside: avoid;
+}
+.resume__line-between-sections{
+    border-bottom: solid 0.05cm black;
 }
 body > div > div:first-child,
 body > div > div:last-child{
     position: relative;
+    page-break-inside: avoid;
 }
 body > div > div:first-child{
     width: 25%;
@@ -38,7 +41,7 @@ body > div > div:last-child{
     width: 75%;
 }
 body > div:first-child{
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 body > div:first-child > div{
     width: 50%;
@@ -60,11 +63,13 @@ body > div:first-child > div:first-child{
 p{
     margin-block-start: 10px;
     margin-block-end: 10px;
+    font-size: 12px;
 }
 h2{
     margin: 0;
     padding-top: 8px;
     text-transform: uppercase;
+    font-size: 14px;
 }
 .resume__avatar_wrapper{
     position: relative;
@@ -86,7 +91,7 @@ h2{
 .resume__personal-data_FIO_name,
 .resume__personal-data_FIO_surname{
     display: inline-block;
-    font-size: 64px;
+    font-size: 36px;
     font-weight: bold;
 }
 .resume__personal-data_FIO_name{
@@ -102,7 +107,7 @@ address{
     font-size: 0;
 }
 address > div{
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
 }
 address > div:last-child{
@@ -112,7 +117,7 @@ address > div:last-child{
     margin-top: 25px;
     padding-top: 25px;
     font-size: 0;
-    border-top: solid 1px #A4A5A6;
+    border-top: dotted 1px black;
 }
 .resume__github_reference,
 .resume__live-host_reference{
@@ -127,8 +132,9 @@ address > div:last-child{
 a[href*="github.com/lovalik"],
 a[href*="github.io/liveHosting"]{
     display: block;
+    page-break-inside: avoid;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
 }
 .resume__qr-for-github,
 .resume__qr-for-live-hosting{
@@ -159,7 +165,6 @@ ul{
 .resume__hobby > div > div{
     display: inline-block;
     vertical-align: top;
-    font-size: 14px;
 }
 .resume__work-experience > div > div:first-child,
 .resume__education > div > div:first-child,
@@ -197,5 +202,5 @@ ul{
     text-indent: 45px;
 }
 .resume__hobby > div:first-child{
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
